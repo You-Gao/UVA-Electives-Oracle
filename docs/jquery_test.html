@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Div Creation with jQuery</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="results-container">
+        <!-- Results will be dynamically added here -->
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // URL for fetching JSON data
+            var baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
+            
+            // Fetch data from the API
+            $.getJSON(baseUrl, function(data) {
+                // Loop through each result and create a div
+                $.each(data, function(index, result) {
+                    // Create a new div element
+                    var newDiv = $('<div>');
+                    var count = data.count;
+                    
+                    // Set content for the div
+                    newDiv.text("Result: " + count)
+                    
+                    // Append the div to the results container
+                    $('#results-container').append(newDiv);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
