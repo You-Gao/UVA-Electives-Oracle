@@ -1,7 +1,7 @@
 ## UVA Electives Oracle (www.yougao.dev/UVA-Electives-Oracle/)
 This project is designed to gather data from a Student Information System API and process it to display a specific set of classes.
 
-The technical motivation of the project was wanting to develop '**SPAs (Singe Page Applications)**' that build their pages using '**AJAX/Async API**' calls. Another aspect of that was too experiment with different framework and libraries typically used like '**Angular**', '**React**', and '**Vue,js**'. What drove me to build it in the first place was wanting a place to view all of the non-trad degree courses that were available each semester.
+The technical motivation of the project was wanting to develop '**SPAs (Singe Page Applications)**' that build their pages using '**AJAX/Async API**' calls. Additionally, I aimed to experiment with popular frameworks and libraries such as ''**Angular, React, and Vue.js**'. The primary inspiration for this project was my desire to create a site where users could easily view all available non-traditional degree courses offered each semester.
 
 ## Installation
 
