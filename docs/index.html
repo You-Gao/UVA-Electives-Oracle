@@ -48,7 +48,7 @@
                 <a class="nav-link" style="font-size: 20px" href="faq.html">FAQ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="font-size: 20px" href="https://github.com/You-Gao/UVA-Event-Oracle">GitHub Repo</a>
+                <a class="nav-link" style="font-size: 20px" href="https://github.com/You-Gao/UVA-Electives-Oracle">GitHub Repo</a>
             </li>
         </ul>
     </div>
@@ -69,8 +69,7 @@
             <tr>
                 <th scope="col">Location</th>
                 <th scope="col">Subject</th>
-                <th scope="col">Insutruction Mode</th>
-                <th scope="col">Total Spots</th>
+                <th scope="col">Capacity</th>
                 <th scope="col">Available Spots</th>
                 <th scope="col">Topic</th>
             </tr>
@@ -102,10 +101,9 @@
         data.forEach(elective => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${elective.campus_descr}</td>
+                <td>${elective.instructors}</td>
                 <td>${elective.subject_descr}</td>
-                <td>${elective.instruction_mode_descr}</td>
-                <td>${elective.enrollment_total}</td>
+                <td>${elective.class_capacity}</td>
                 <td>${elective.enrollment_available}</td>
                 <td>${elective.topic}</td>
             `;
